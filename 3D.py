@@ -1,5 +1,5 @@
 import pygame
-
+import random
 pygame.init()
 win = pygame.display.set_mode((500,500))
 
@@ -28,7 +28,11 @@ while True:
                 x = x + 10
                 w = w - 5
                 v = v - 5
-
+    x = pygame.mouse.get_pos()[0]
+    y = pygame.mouse.get_pos()[1]
+    z = pygame.mouse.get_pos()[1] / 2 -100
+    v = -(pygame.mouse.get_pos()[0] / 2 - 100)
+    w = -(pygame.mouse.get_pos()[0] / 2 )+ 350
 
     win.fill((255, 255, 255))
 
