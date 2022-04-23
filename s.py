@@ -31,12 +31,11 @@ while True:
 
 
     if key.get_pressed()[K_w]:
-        if aa == 0:
-            aa = 1
-            win.fill((0, 0, 0))
-        if aa == 1:
-            aa = 0
-            win.fill((0, 0, 0))
+        aa = 1
+        win.fill((0, 0, 0))
+    if key.get_pressed()[K_q]:
+        aa = 0
+        win.fill((0, 0, 0))
 
     if key.get_pressed()[K_SPACE]:
         win.fill((0, 0, 0))
